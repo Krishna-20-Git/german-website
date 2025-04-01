@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   const germanText = {
-    title: "Olympische Spiele und Deutschland",
+    title: "Deutschland und Olympia",
     navHome: "Startseite",
     navAchievements: "Leistungen",
     navAthletes: "Berühmte Athleten",

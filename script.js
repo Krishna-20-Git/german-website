@@ -266,4 +266,23 @@ document.addEventListener("DOMContentLoaded", function () {
       behavior: "smooth",
     });
   });
+
+  // Select the toggle button and headings
+  const imageGalleryHeading = document.querySelector("h2[style='text-align: center;']:nth-of-type(2)");
+  const latestNewsHeading = document.querySelector("h2[style='text-align: center;']:nth-of-type(3)");
+
+  // Track the current language state
+  let isGerman = false;
+
+  // Add event listener to the toggle button
+  languageToggle.addEventListener("click", () => {
+    isGerman = !isGerman;
+
+    // Update the button text
+    languageToggle.textContent = isGerman ? "English" : "Deutsch";
+
+    // Update the headings
+    imageGalleryHeading.textContent = isGerman ? "Bildergalerie" : "Image Gallery";
+    latestNewsHeading.textContent = isGerman ? "Neueste Nachrichten" : "Latest News";
+  });
 });

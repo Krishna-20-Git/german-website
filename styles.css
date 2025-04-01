@@ -1,0 +1,278 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  background-color: #18230f;
+   color: #ffffff;
+  background-image: url(https://img.freepik.com/free-photo/wavy-flag-germany-texture-background-generative-ai_169016-29898.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin-bottom: 0;
+}
+
+header {
+  background: #040D12;
+  color: #ffffff;
+  padding: 1rem 0;
+  text-align: center;
+  position: relative;
+  margin-bottom: 0;
+  font-size: xx-large;
+}
+
+header h1 {
+  margin: 0;
+}
+
+#home img {
+  height: 400px;
+  width: 400px;
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  font-size: medium;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #3f3e3e;
+}
+
+section {
+  padding: 2rem;
+  margin: 0;
+  background: bisque;
+  border-radius: 0;
+  box-shadow: none;
+  color: #000000;
+}
+
+h2 {
+  color: #000000;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 20px;
+  margin: 0;
+}
+
+#athletes-list img {
+  width: 220px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+li {
+  list-style-type: square;
+}
+#language-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #91039e;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#language-toggle:hover {
+  background-color: #75017d;
+}
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 90%;
+  margin: auto;
+}
+.card {
+  background:#7e3a3a;
+  color: #000;
+  flex: 1 1 300px;
+  max-width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+.card-2 {
+  background: #835c5c;
+  flex: 1 1 300px;
+  max-width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+@media (max-width: 960px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.card:hover {
+  transform: scale(1.04);
+}
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.card h2 {
+  margin: 10px 0;
+  color: #ffffff;
+}
+.card-2 h3 {
+  margin: 10px 0;
+  color: #080707;
+}
+.card p {
+  margin: 5px 0;
+  color: #f4f4f4;
+}
+.Summer-Olympics img {
+  margin-top: 20px;
+  margin-bottom: 2px;
+}
+footer {
+  text-align: center;
+  padding: 0.3rem 0;
+  background: #93B1A6;
+  color: #000000;
+  margin-top: 0;
+  width: 200;
+  margin: 0;
+}
+
+.carousel {
+  position: relative;
+  max-width: 90%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  bottom: 30px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.image-container {
+  text-align: center; 
+  gap: 30px;
+}
+img {
+  max-width: 100%; 
+  height: auto;
+}
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+  height: 100%;
+  width: 100%;
+  flex: 0 0 100%;
+  border-radius: 10px;
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+button.prev {
+  left: 10px;
+}
+button.next {
+  right: 10px;
+}
+.gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+            gap: 20px; /* Space between images */
+            justify-items: center; /* Centers items in the grid */
+            padding: 20px;
+                    }
+        .image-container {
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        }
+        p {
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+       #go-to-top-btn {
+      display: none; /* Hidden by default */
+      position: fixed; /* Fixed position */
+      bottom: 20px; /* Distance from the bottom */
+      right: 20px; /* Distance from the right */
+      z-index: 99; /* Make sure it's on top of other elements */
+      border: none; /* No border */
+      outline: none; /* No outline */
+      background-color: #007bff; /* Blue background */
+      color: white; /* White text */
+      cursor: pointer; /* Pointer cursor on hover */
+      padding: 15px; /* Padding */
+      border-radius: 50%; /* Circular button */
+      font-size: 18px; /* Font size */
+      transition: background-color 0.3s; /* Smooth transition */
+    }
+
+#go-to-top-btn:hover {
+      background-color: #0056b3; 
+    }

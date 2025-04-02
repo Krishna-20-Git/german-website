@@ -132,11 +132,13 @@ ul li {
 
 .card-container {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: center;
   gap: 50px;
   max-width: 90%;
   margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .card {
@@ -147,7 +149,7 @@ ul li {
   width: 300px;
   text-align: center;
   transition: transform 0.3s ease-in-out;
-}
+  }
 
 .card-2 {
   background: #835c5c;
@@ -159,7 +161,6 @@ ul li {
   text-align: center;
   transition: transform 0.3s ease-in-out;
 }
-
 @media (max-width: 960px) {
   .card-container {
     flex-direction: column;

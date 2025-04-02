@@ -132,7 +132,7 @@ ul li {
 
 .card-container {
   display: flex;
-   flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: center;
   gap: 50px;
   max-width: 90%;
@@ -149,11 +149,11 @@ ul li {
   width: 300px;
   text-align: center;
   transition: transform 0.3s ease-in-out;
-  }
+}
 
 .card-2 {
   background: #835c5c;
-  flex: 1 1 300px;
+  flex-wrap: wrap;
   max-width: 300px;
   padding: 20px;
   border-radius: 10px;
@@ -163,11 +163,11 @@ ul li {
 }
 @media (max-width: 960px) {
   .card-container {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
-
 .card:hover {
   transform: scale(1.03);
   box-shadow: #2d0f0f 0px 0px 0px 1.5px;
@@ -205,7 +205,7 @@ footer {
   text-align: center;
   padding: 10px 0;
   margin-top: 20px;
-  width: 200;
+  width: 100%;
   margin: 0;
 }
 
